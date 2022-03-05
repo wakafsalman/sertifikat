@@ -95,7 +95,7 @@
                         <p>Yang telah memberikan <span class="text-danger">Wakaf</span> untuk program:</p>
             <p><span class="text-danger ">{{ $data->program_donasi }}</span></p>
             <p>Sebesar :</p>
-            <p class="text-danger text-big" style="font-size: 20px; font-weight: bold;">{{ mata_uang_IDR($data->nominal) }}</p>
+            <p class="text-danger text-big" style="font-size: 20px; font-weight: bold;">Rp. {{ number_format($data->nominal, 0, ',',',') }},-</p>
             <p>
                 Semoga Allah senantiasa memberimu pahala pada harta yang telah engkau berikan dan semoga Allah memberikanmu
                 berkah pada apa saja yang tinggal padamu, serta dijadikannya kesucian bagi engkau.
