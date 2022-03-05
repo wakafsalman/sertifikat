@@ -16,7 +16,17 @@ class DonaturController extends Controller
 
         $data       =   Donatur::orderBy('id','DESC')->get();
         $judul      =   'Donasi';
-        return view('donatur/data', compact('data','judul'));
+        $statistik_donatur = Donatur::select('tanggal')
+                                    ->selectRaw('count(nama) as jumlah_donatur')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        $statistik_donasi  = Donatur::select('tanggal')
+                                    ->selectRaw('sum(nominal) as jumlah_donasi')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        return view('donatur/data', compact('data','judul','statistik_donatur','statistik_donasi'));
 
     }
 

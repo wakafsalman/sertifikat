@@ -52,7 +52,17 @@ class SertifikatController extends Controller
     public function lihat_sertifikat($id){
 
         $data = Donatur::find($id);
-        return view('donatur/sertifikat', compact('data'));
+        $statistik_donatur = Donatur::select('tanggal')
+                                    ->selectRaw('count(nama) as jumlah_donatur')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        $statistik_donasi  = Donatur::select('tanggal')
+                                    ->selectRaw('sum(nominal) as jumlah_donasi')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        return view('donatur/sertifikat', compact('data','statistik_donatur','statistik_donasi'));
 
     }
 

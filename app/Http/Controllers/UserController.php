@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Donatur;
 use App\Exports\UserExport;
 use App\Imports\UserImport;
 use Illuminate\Http\Request;
@@ -17,7 +18,17 @@ class UserController extends Controller
 
         $data       =   User::all();
         $judul      =   'Pengaturan';
-        return view('user/data', compact('data','judul'));
+        $statistik_donatur = Donatur::select('tanggal')
+                                    ->selectRaw('count(nama) as jumlah_donatur')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        $statistik_donasi  = Donatur::select('tanggal')
+                                    ->selectRaw('sum(nominal) as jumlah_donasi')
+                                    ->groupby('tanggal')
+                                    ->orderby('tanggal')
+                                    ->get();
+        return view('user/data', compact('data','judul','statistik_donatur','statistik_donasi'));
 
     }
 

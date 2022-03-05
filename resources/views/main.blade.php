@@ -36,7 +36,7 @@
         <!-- small box -->
         <div class="small-box bg-yellow">
           <div class="inner">
-            <h3>{{ mata_uang_IDR_desimal_dua($jumlah_donasi_per_bulan->sum('nominal')) }}</h3>
+            <h3>Rp. {{ number_format($jumlah_donasi_per_bulan->sum('nominal'), 0, ',',',') }}.00,-</h3>
 
             <p>Donasi Terkumpul ({{ $nama_bulan }})</p>
           </div>
@@ -50,7 +50,7 @@
         <!-- small box -->
         <div class="small-box bg-green">
           <div class="inner">
-            <h3>{{ mata_uang_IDR_desimal_dua($jumlah_donasi) }}</h3>
+            <h3>Rp. {{ number_format($jumlah_donasi, 0, ',',',') }}.00,-</h3>
 
             <p>Total Donasi</p>
           </div>
@@ -116,4 +116,6 @@
 
   </section>
 </div>
+
+
 @endsection

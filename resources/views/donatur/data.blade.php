@@ -69,7 +69,7 @@
             <td><a href="/sertifikat/{{ $row->id }}/preview">{{ $row->no_sertifikat }}</a></td>
             <td>{{ $row->tanggal_indo }}</td>
             <td>{{ $row->nama }}</td>
-            <td>{{ mata_uang_IDR_desimal_dua($row->nominal) }}</td>
+            <td>Rp. {{ number_format($row->nominal, 0, ',',',') }}.00,-</td>
             <td>{{ $row->users->nama }}</td>
             <td>
               <div class="btn-group">
