@@ -1,0 +1,10 @@
+SISTEM E-SERTIFIKAT WAKAF SALMAN
+
+Done :
+
+- Front-End
+- Back-End Simple
+
+To do List :
+
+- fitur donasi tipe lainnya
