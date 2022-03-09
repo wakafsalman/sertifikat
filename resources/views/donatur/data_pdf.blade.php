@@ -12,7 +12,7 @@
         margin: 0;
     }
     .main-wrapper {
-        background-image: url( {{ public_path('img/sertifikat/frame.jpg')  }} );
+        background-image: url( {{ public_path('img/sertifikat/frame.png')  }} );
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 100%;
