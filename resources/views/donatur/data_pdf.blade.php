@@ -17,6 +17,7 @@
         background-size: 100% 100%;
         height: 100%;
         width: 100%;
+        position: absolute;
     }
 
     .header-image {
