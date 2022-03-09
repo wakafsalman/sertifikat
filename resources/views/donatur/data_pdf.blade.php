@@ -67,9 +67,7 @@
                 <img src="{{ public_path('img/sertifikat/logo_waqaf_salman.png')  }}" width="160" alt="">
             </div>
 
-            <div class="right">
-                <img  src="{{ public_path('img/sertifikat/logo_pohon.png')  }}" width="100" height="100"  alt="Logo Pohon">
-                
+            <div class="right">                
                 <img  src="{{ public_path('img/sertifikat/logo_bwi.png')  }}" width="90" height="90"  alt="Logo BWI">
                 
                 <img src="{{ public_path('img/sertifikat/logo_waqif.png')  }}" width="70" height="70"  alt="Logo Waqif">
@@ -87,8 +85,8 @@
             <p class="text-danger" style="font-weight: bold;">{{ $data->no_sertifikat }}</p>
             <p>Diberikan Kepada:</p>
             <p class="text-danger text-big" style="font-size: 18px; font-weight: bold;"> {{ $data->nama }}</p>
-                        <p>Yang telah memberikan <span class="text-danger">Wakaf</span> untuk program:</p>
-            <p><span class="text-danger ">{{ $data->program_donasi }}</span></p>
+                        <p>Yang telah memberikan <span class="text-danger">{{ $data->tipe_donasi }}</span> untuk program:</p>
+            <p><span class="text-danger "><b>{{ $data->program_donasi }}</b></span></p>
             <p>Sebesar :</p>
             <p class="text-danger text-big" style="font-size: 20px; font-weight: bold;">Rp. {{ number_format($data->nominal, 0, ',',',') }},-</p>
             <p>
@@ -99,7 +97,7 @@
                 Bandung, <span class="text-danger">{{ $data->tanggal_indo }}</span>
             </p>
             <p>
-                <img src="{{ public_path('img/sertifikat/ttd.png')  }}" width="120" alt="">
+                <img src="{{ public_path('img/sertifikat/ttd.png')  }}" width="240" alt="">
             </p>
 
             <p>
