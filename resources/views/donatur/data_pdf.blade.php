@@ -11,6 +11,7 @@
         padding: 0;
         margin: 0;
     }
+    /*
     .main-wrapper {
         background-image: url( {{ public_path('img/sertifikat/frame.png')  }} );
         background-repeat: no-repeat;
@@ -19,6 +20,7 @@
         width: 100%;
         position: absolute;
     }
+    */
 
     .header-image {
         padding: 30px 100px 0px 100px;
@@ -63,7 +65,8 @@
     <div class="main-wrapper">
 
         <div class="header-image">
-            
+            <img src="{{ public_path('img/sertifikat/frame.png')  }}" alt="" style="width:1000px;height:200px;">
+                
             <div class="left">
                 <img src="{{ public_path('img/sertifikat/logo_waqaf_salman.png')  }}" width="160" alt="">
             </div>
