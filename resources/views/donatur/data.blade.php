@@ -54,6 +54,9 @@
             <th>Tanggal</th>
             <th>Nama</th>
             <th>Nominal</th>
+            <th>Email</th>
+            <th>No. Telepon</th>
+            <th>Alamat</th>
             <th>Dibuat Oleh</th>
             <th>Aksi</th>
           </tr>
@@ -70,6 +73,9 @@
             <td>{{ $row->tanggal_indo }}</td>
             <td>{{ $row->nama }}</td>
             <td>Rp. {{ number_format($row->nominal, 0, ',',',') }}.00,-</td>
+            <td>{{ $row->email }}</td>
+            <td>{{ $row->no_telepon }}</td>
+            <td>{{ $row->alamat }}</td>
             <td>{{ $row->users->nama }}</td>
             <td>
               <div class="btn-group">
