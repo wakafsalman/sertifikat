@@ -65,7 +65,7 @@
     <div class="main-wrapper">
 
         <div class="header-image">
-            <img src="{{ public_path('img/sertifikat/frame.png')  }}" alt="" style="width:1000px;height:200px;">
+            <img src="{{ public_path('img/sertifikat/frame.png')  }}" alt="" width="1116" height="790" style="margin-top:-28px;margin-left:-96px;position:absolute;">
                 
             <div class="left">
                 <img src="{{ public_path('img/sertifikat/logo_waqaf_salman.png')  }}" width="160" alt="">
