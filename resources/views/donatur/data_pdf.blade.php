@@ -4,24 +4,13 @@
   <style>
 
     * {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Times-Roman';
         font-size: 14px;
     }
     html {
         padding: 0;
         margin: 0;
     }
-    /*
-    .main-wrapper {
-        background-image: url( {{ public_path('img/sertifikat/frame.png')  }} );
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-    */
-
     .header-image {
         padding: 30px 100px 0px 100px;
     }
