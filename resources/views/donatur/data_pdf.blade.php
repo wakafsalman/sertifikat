@@ -5,7 +5,7 @@
 
     * {
         font-family: 'Times-Roman';
-        font-size: 14px;
+        font-size: 16px;
     }
     html {
         padding: 0;
@@ -81,12 +81,12 @@
                         <p>Yang telah memberikan <span class="text-danger">{{ $data->tipe_donasi }}</span> untuk program:</p>
             <p><span class="text-danger "><b>{{ $data->program_donasi }}</b></span></p>
             <p>Sebesar :</p>
-            <p class="text-danger text-big" style="font-size: 20px; font-weight: bold;">Rp. {{ number_format($data->nominal, 0, ',',',') }},-</p>
+            <p class="text-danger text-big" style="font-size: 20px; font-weight: bold;">Rp. {{ number_format($data->nominal, 0, ',','.') }},-</p>
             <p>
                 Semoga Allah senantiasa memberimu pahala pada harta yang telah engkau berikan dan semoga Allah memberikanmu
                 berkah pada apa saja yang tinggal padamu, serta dijadikannya kesucian bagi engkau.
             </p>
-            <p>
+            <p style="margin-top: 60px;">
                 Bandung, <span class="text-danger">{{ $data->tanggal_indo }}</span>
             </p>
             <p>

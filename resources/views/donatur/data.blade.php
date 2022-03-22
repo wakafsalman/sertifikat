@@ -83,6 +83,7 @@
                   <span class="fa fa-caret-down"></span></button>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="/eksport_pdf/{{ $row->id }}">Eksport PDF</a></li>
+                  <li><a href="/print_pdf/{{ $row->id }}">Print PDF</a></li>
                   <li><a href="" data-toggle="modal" data-target="#modal-rubah-donatur-{{ $row->id }}">Edit</a></li>
                   <li><a href="#" class="hapus" data-id="{{ $row->id }}" data-nama="{{ $row->nama }}">Delete</a></li>
                 </ul>

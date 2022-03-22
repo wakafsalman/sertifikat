@@ -39,6 +39,7 @@ Route::get('/hapus_user/{id}', [UserController::class, 'hapus_user'])->name('hap
 
 //PDF
 Route::get('/eksport_pdf/{id}', [DonaturController::class, 'eksport_pdf'])->name('eksport_pdf');
+Route::get('/print_pdf/{id}', [DonaturController::class, 'print_pdf'])->name('print_pdf');
 
 //Excel
 

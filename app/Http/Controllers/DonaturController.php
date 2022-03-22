@@ -122,6 +122,15 @@ class DonaturController extends Controller
 
     }
 
+    public function print_pdf($id){
+
+        $data = Donatur::find($id);
+
+        $pdf = PDF::loadview('donatur/data_pdf', compact('data'))->setPaper('a4', 'landscape');
+        return $pdf->stream();
+
+    }
+
     public function import_excel(Request $request) {
 
         $data = $request->file('file');
