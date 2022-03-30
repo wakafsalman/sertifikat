@@ -37,7 +37,6 @@
                     <div class="form-group">
                         <label for="exampleInputName" class="form-label">Nama Donatur <span class="text-danger">*</span></label>
                         <input type="text" name="nama" class="form-control" id="exampleInputName" required>
-                        <span class="text-danger error-text nama_error"></span>
                     </div>
                     <div class="form-group">
                         <div class="row">
@@ -48,7 +47,6 @@
                             <div class="col-xs-6">
                                 <label for="exampleInputPhone" class="form-label">Nomor HP <span class="text-danger">*</span></label>
                                 <input type="number" name="no_telepon" class="form-control" id="exampleInputPhone" required>
-                                <span class="text-danger error-text no_telepon_error"></span>
                             </div>
                         </div>
                     </div>
@@ -57,7 +55,10 @@
                         <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress" required>
                         <input type="hidden" name="tampil_alamat" value="0">
                         <input type="checkbox" name="tampil_alamat" value="1"> Tampilkan Alamat
-                        <span class="text-danger error-text alamat_error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress" class="form-label">Nomor Resi </label>
+                        <input type="text" name="no_resi" class="form-control" id="exampleInputEmail">
                     </div>
                     <div class="form-group">
                         <div class="row">
@@ -69,7 +70,6 @@
                             <div class="col-xs-6">
                                 <label for="exampleInputPrice" class="form-label">Nominal <span class="text-danger">*</span></label>
                                 <input type="text" name="nominal" class="form-control" id="exampleInputPrice" required>
-                                <span class="text-danger error-text nominal_error"></span>
                             </div>
                         </div>
                     </div>
@@ -84,12 +84,10 @@
                             <option value="CSR">CSR</option>
                             <option value="Hibah">Hibah</option>
                         </select>
-                        <span class="text-danger error-text tipe_donasi_error"></span>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputProgram" class="form-label">Program Donasi <span class="text-danger">*</span></label>
                         <input type="text" name="program_donasi" class="form-control" id="exampleInputProgram" required>
-                        <span class="text-danger error-text program_donasi_error"></span>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -134,6 +132,10 @@
                         <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress" value="{{ $row->alamat }}" required>
                         <input type="hidden" name="tampil_alamat" value="0">
                         <input type="checkbox" name="tampil_alamat" value="1"> Tampilkan Alamat
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress" class="form-label">Nomor Resi </label>
+                        <input type="text" name="no_resi" class="form-control" id="exampleInputEmail" value="{{ $row->no_resi }}">
                     </div>
                     <div class="form-group">
                         <div class="row">

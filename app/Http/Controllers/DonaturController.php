@@ -65,6 +65,7 @@ class DonaturController extends Controller
             'program_donasi'    =>  $request->program_donasi,
             'tampil_alamat'     =>  $request->tampil_alamat,
             'id_users'          =>  auth()->user()->id,
+            'no_resi'           =>  $request->no_resi,
         ]);
         return redirect()->route('donatur')->with('success', 'Data berhasil ditambah');
 
@@ -86,6 +87,7 @@ class DonaturController extends Controller
             'program_donasi'    =>  $request->program_donasi,
             'tampil_alamat'     =>  $request->tampil_alamat,
             'id_users'          =>  auth()->user()->id,
+            'no_resi'           =>  $request->no_resi,
         ];
         $data->update($rubah_data);
         return redirect()->route('donatur')->with('success', 'Data berhasil dirubah');
