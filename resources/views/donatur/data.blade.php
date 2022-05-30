@@ -54,7 +54,6 @@
             <th>Tanggal</th>
             <th>Nama</th>
             <th>Nominal</th>
-            <th>No. Resi</th>
             <th>Aksi</th>
           </tr>
           </thead>
@@ -70,7 +69,6 @@
             <td>{{ $row->tanggal_indo }}</td>
             <td>{{ $row->nama }}</td>
             <td>Rp. {{ number_format($row->nominal, 0, ',',',') }}.00,-</td>
-            <td>{{ $row->no_resi }}</td>
             <td>
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Aksi

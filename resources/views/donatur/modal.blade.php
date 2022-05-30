@@ -45,20 +45,16 @@
                                 <input type="text" name="email" class="form-control" id="exampleInputEmail">
                             </div>
                             <div class="col-xs-6">
-                                <label for="exampleInputPhone" class="form-label">Nomor HP <span class="text-danger">*</span></label>
-                                <input type="number" name="no_telepon" class="form-control" id="exampleInputPhone" required>
+                                <label for="exampleInputPhone" class="form-label">Nomor HP</label>
+                                <input type="number" name="no_telepon" class="form-control" id="exampleInputPhone">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputAddress" class="form-label">Alamat <span class="text-danger">*</span></label>
-                        <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress" required>
+                        <label for="exampleInputAddress" class="form-label">Alamat</label>
+                        <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress">
                         <input type="hidden" name="tampil_alamat" value="0">
                         <input type="checkbox" name="tampil_alamat" value="1"> Tampilkan Alamat
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputAddress" class="form-label">Nomor Resi </label>
-                        <input type="text" name="no_resi" class="form-control" id="exampleInputEmail">
                     </div>
                     <div class="form-group">
                         <div class="row">
@@ -122,14 +118,14 @@
                                 <input type="text" name="email" class="form-control" id="exampleInputEmail" value="{{ $row->email }}">
                             </div>
                             <div class="col-xs-6">
-                                <label for="exampleInputPhone" class="form-label">Nomor HP <span class="text-danger">*</span></label>
-                                <input type="number" name="no_telepon" class="form-control" id="exampleInputPhone" value="{{ $row->no_telepon }}" required>
+                                <label for="exampleInputPhone" class="form-label">Nomor HP</label>
+                                <input type="number" name="no_telepon" class="form-control" id="exampleInputPhone" value="{{ $row->no_telepon }}">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputAddress" class="form-label">Alamat <span class="text-danger">*</span></label>
-                        <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress" value="{{ $row->alamat }}" required>
+                        <label for="exampleInputAddress" class="form-label">Alamat</label>
+                        <input type="textarea" name="alamat" class="form-control" id="exampleInputAddress" value="{{ $row->alamat }}">
                         <input type="hidden" name="tampil_alamat" value="0">
                         <input type="checkbox" name="tampil_alamat" value="1"> Tampilkan Alamat
                     </div>
